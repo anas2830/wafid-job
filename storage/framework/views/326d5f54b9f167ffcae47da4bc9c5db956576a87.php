@@ -1,0 +1,2 @@
+<label class="fw-bold"><?php echo e($block_label); ?></label>
+<input type="text" name="website_template_info[<?php echo e($block_class_name); ?>]" <?php if(isset($website_template_info[$block_class_name])): ?> value="<?php echo e($website_template_info[$block_class_name]); ?>" <?php endif; ?> class="form-control website_template_info" /><?php /**PATH D:\xampp\htdocs\templete-create-corporate\resources\views/website/template-process/blockType/text.blade.php ENDPATH**/ ?>
