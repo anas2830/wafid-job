@@ -259,14 +259,13 @@ jQuery(document).ready(function($) {
 	};
 	searchToggle();
 
-	//stickty js
-	$(window).on('scroll',function() {    
-		var scroll = $(window).scrollTop();
-	 if (scroll < 245) {
-		$(".site-navbar").removeClass("sticky");
-	 }else{
-		$(".site-navbar").addClass("sticky");
-	 }
-	});
-
 });
+
+$(window).on('scroll',function() {    
+	var scroll = $(window).scrollTop();
+	if (scroll < 245) {
+	 $(".site-navbar").removeClass("sticky");
+	}else{
+	 $(".site-navbar").addClass("sticky");
+	}
+   });

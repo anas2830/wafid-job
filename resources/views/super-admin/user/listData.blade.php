@@ -68,8 +68,8 @@
                             <th width="20%">Offer</th>
                             <th width="10%">Country</th>
                             <th width="10%">Destination</th>
-                            <th width="5%">Status</th>
-                            <th width="15%">Action</th>
+                            <th width="10%">Status</th>
+                            <th width="10%">Document</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -94,9 +94,8 @@
                                 </td>
                                 <td>
                                   <a href="#" class="open-modal action-icon" modal-title="Show Document" modal-type="show" modal-size="large" modal-class="" selector="userDocument" modal-link="{{url('user-document/'.$user->id)}} ">
-                                    Documents | 
+                                    Documents
                                   </a>
-                                  <a href="#" class="action-icon"><i class="icon-trash" id="delete" delete-link="{{url('delete-user', [$user->id])}}">@csrf </i></a>
                                 </td>
                             </tr> 
                             @endforeach

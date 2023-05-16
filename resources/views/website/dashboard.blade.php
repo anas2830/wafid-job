@@ -88,28 +88,27 @@
                         <div class="profile-input-wrap">
                             <div class="mb-3 mt-3">
                                 <label for="passportCopyUpload" class="form-label">Step-1:Upload Passport Copy and Job
-                                    Information <span class="help-block">( <code>extension: pdf, doc, docx )</code></span></label>
+                                    Information</label>
                                 <input class="form-control" type="file" id="passportCopyUpload" name="passport_copy">
                                 @if(isset($userDocument) && isset($userDocument->passport_original_name))
-                                    <span style="color:#16a549">{{ @$userDocument->passport_original_name }}</span>
+                                    <span style="color:#16a549">Already uploaded: {{ @$userDocument->passport_original_name }}</span>
                                 @endif
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="medicalReportUpload" class="form-label">Step-2:Upload medical test report,police
-                                    clearance and necessary documents <span class="help-block">( <code>extension: pdf, doc, docx )</code></span></label>
-                                <input class="form-control" type="file" id="medicalReportUpload" name="medical_test[]" multiple>
-                                @if(count($userMedicalDocument) > 0 )
-                                    @foreach($userMedicalDocument as $medical_document)
-                                        <span style="color:#16a549">{{ @$medical_document->medical_original_name }}</span></br>
-                                    @endforeach
+                                    clearance and necessary documents</label>
+                                <input class="form-control" type="file" id="medicalReportUpload" name="medical_test">
+                                @if(isset($userDocument) && isset($userDocument->medical_original_name))
+                                    <span style="color:#16a549">Already uploaded: {{ @$userDocument->medical_original_name }}</span>
                                 @endif
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="bankTransferDocument" class="form-label">Step-3:Pay Your Service fee and Upload
-                                    Bank receipt here. <span class="help-block">( <code>extension: pdf, doc, docx )</code></span></label>
+                                    Bank
+                                    receipt here.</label>
                                 <input class="form-control" type="file" id="bankTransferDocument" name="bank_receipt">
                                 @if(isset($userDocument) && isset($userDocument->bank_original_name))
-                                    <span style="color:#16a549">{{ @$userDocument->bank_original_name }}</span>
+                                    <span style="color:#16a549">Already uploaded: {{ @$userDocument->bank_original_name }}</span>
                                 @endif
                             </div>
                             <div class="update-info-btn-wrap">

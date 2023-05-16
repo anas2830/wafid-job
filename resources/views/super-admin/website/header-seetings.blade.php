@@ -58,39 +58,6 @@
                         <div class="card-body">
                             <form action="{{ route('header-seetings') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                                <h3>Site Seetings:</h3>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label for="name" class="col-md-2 col-form-label text-md-right">site logo:</label>
-                                            <div class="col-md-10">
-                                                <input type="file" class="form-control" name="site_logo">
-                                                <img src="{{ asset('uploads/bg/'.$header_footer_seetings->site_logo) }}" style="max-height:150px; max-width:150px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label for="name" class="col-md-2 col-form-label text-md-right">fav icon:</label>
-                                            <div class="col-md-10">
-                                                <input type="file" class="form-control" name="fav_icon">
-                                                <img src="{{ asset('uploads/bg/'.$header_footer_seetings->fav_icon) }}" style="max-height:50px; max-width:50px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                 
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label for="name" class="col-md-2 col-form-label text-md-right">site title:</label>
-                                            <div class="col-md-10">
-                                                <input type="text" class="form-control" name="site_title" value="{{ $header_footer_seetings->site_title }}">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <h3>Header Seetings:</h3>
                                 <div class="row">
                                     <div class="col-md-6">

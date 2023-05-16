@@ -22,10 +22,8 @@
                     @endif
                 </td>
                 <td>
-                    @if(count($user_medical_document) > 0)
-                        @foreach($user_medical_document as $document)
-                            <a target="_blank" href="{{ asset('uploads/userDocument/'.$document->medical_name) }}" download>{{ $document->medical_original_name }}</a> </br>
-                        @endforeach
+                    @if(isset($user_documents->medical_name))
+                        <a target="_blank" href="{{ asset('uploads/userDocument/'.$user_documents->medical_name) }}" download>{{ $user_documents->medical_original_name }}</a>
                     @else 
                         No File Found
                     @endif

@@ -49,7 +49,6 @@ Route::group(['middleware' => 'auth:admin'], function () {
     Route::get('/dashboard', 'SuperAdmin\HomeController@index')->name('dashboard');
 
     Route::get('/user-list', 'SuperAdmin\HomeController@userList')->name('user-list');
-    Route::delete('/delete-user/{id}', 'SuperAdmin\HomeController@deleteUser')->name('delete-user');
     Route::get('/user-document/{id}', 'SuperAdmin\HomeController@userDocument')->name('user-document');
 
     //website

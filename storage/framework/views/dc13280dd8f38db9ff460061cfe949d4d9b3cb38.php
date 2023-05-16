@@ -20,9 +20,10 @@
   <link rel="stylesheet" href="<?php echo e(asset('super-admin')); ?>/plugins/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo e(asset('super-admin')); ?>/dist/css/adminlte.min.css">
-  <link rel="stylesheet" href="<?php echo e(asset('super-admin')); ?>/style.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="<?php echo e(asset('super-admin')); ?>/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="<?php echo e(asset('super-admin')); ?>/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="<?php echo e(asset('super-admin')); ?>/plugins/summernote/summernote-bs4.min.css">
   <link rel="stylesheet" type="text/css" href="<?php echo e(asset('website')); ?>/css/dataTables.min.css">
@@ -47,7 +48,7 @@
     <a href="index3.html" class="brand-link">
       <img src="<?php echo e(asset('super-admin')); ?>/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">
-      <span class="right badge badge-success"> <?php if(Auth::guard('admin')->check()): ?> Admin <?php endif; ?></span>
+      <span class="right badge badge-success"> <?php if(Auth::guard('admin')->check()): ?> Admin <?php else: ?> Moderator <?php endif; ?></span>
       </span>
     </a>
 
@@ -59,6 +60,8 @@
           <?php 
             if(Auth::guard('admin')->check()) {
               $path = "adminProfile";
+            }else{
+              $path = "moderatorProfile";
             }
           ?>
           <img src="<?php if(empty(Auth::user()->photo_name)): ?> <?php echo e(asset('super-admin')); ?>/dist/img/user2-160x160.jpg <?php else: ?> <?php echo e(asset('uploads/'.$path.'/thumb/'.Auth::user()->photo_name)); ?>  <?php endif; ?>" class="img-circle elevation-2" alt="User Image">
@@ -71,67 +74,55 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-          <li class="nav-item">
-            <a href="<?php echo e(url('/dashboard')); ?>" class="nav-link <?php if($activeMenu == 'home'): ?> active <?php endif; ?>">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link <?php if($activeMenu == 'moderator' || $activeMenu == 'home' || $activeMenu == 'blog-post' ): ?> active <?php endif; ?>">
               <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="<?php echo e(url('/user-list')); ?>" class="nav-link <?php if($activeMenu == "user-list"): ?> active <?php endif; ?>">
-              <i class="nav-icon fas fa-th"></i>
-              <p>User List</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link <?php if($activeMenu == "header-seetings" || $activeMenu == "services" || $activeMenu == "easy-steps" || $activeMenu == "offers"): ?> active <?php endif; ?>">
-              <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Website
+                Dashboard
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
+
               <li class="nav-item">
-                <a href="<?php echo e(url('/header-seetings')); ?>" class='nav-link <?php if($activeMenu == "header-seetings"): ?> active <?php endif; ?>'>
+                <a href="<?php if(Auth::guard('admin')->check()): ?> <?php echo e(url('/dashboard')); ?> <?php else: ?> <?php echo e(url('/moderatorDashboard')); ?> <?php endif; ?>" class='nav-link <?php if($activeMenu == "home"): ?> active <?php endif; ?>'>
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Header/Footer Seetings</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo e(url('/about-us')); ?>" class='nav-link <?php if($activeMenu == "about-us"): ?> active <?php endif; ?>'>
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>About-Us</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo e(url('/services')); ?>" class='nav-link <?php if($activeMenu == "services"): ?> active <?php endif; ?>'>
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Services</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo e(url('/easy-steps')); ?>" class='nav-link <?php if($activeMenu == "easy-steps"): ?> active <?php endif; ?>'>
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Easy Steps</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo e(url('/offers')); ?>" class='nav-link <?php if($activeMenu == "offers"): ?> active <?php endif; ?>'>
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Offers</p>
+                  <p>Home</p>
                 </a>
               </li>
 
+              <?php if(Auth::guard('admin')->check()): ?>
+              <li class="nav-item">
+                <a href="<?php echo e(url('/handleModerator')); ?>" class='nav-link <?php if($activeMenu == "moderator"): ?> active <?php endif; ?>'>
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Moderator</p>
+                </a>
+              </li>
+              <?php endif; ?>   
+
+              <li class="nav-item">
+                <a href="<?php if(Auth::guard('admin')->check()): ?> <?php echo e(url('handleBlogAdmin')); ?> <?php else: ?> <?php echo e(url('handleBlogModerator')); ?> <?php endif; ?>" class='nav-link <?php if($activeMenu == "blog-post"): ?> active <?php endif; ?>'>
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Blog Post</p>
+                </a>
+              </li>
             </ul>
           </li>
-          
+
+        </ul>
+
+        
+        <ul class="nav nav-pills nav-sidebar flex-column" role="menu" data-accordion="false">
           <li class="nav-item">
-            <a class='nav-link <?php if($activeMenu == "profile"): ?> active <?php endif; ?>' href="<?php if(Auth::guard('admin')->check()): ?> <?php echo e(url('adminProfile')); ?> <?php endif; ?>">
+            <a class='nav-link <?php if($activeMenu == "profile"): ?> active <?php endif; ?>' href="<?php if(Auth::guard('admin')->check()): ?> <?php echo e(url('adminProfile')); ?> <?php else: ?> <?php echo e(url('moderatorProfile')); ?> <?php endif; ?>">
                 <i class="far fa-circle nav-icon"></i> <p>Profile</p>
             </a>
           </li>
+        </ul>
+        
+        <ul class="nav nav-pills nav-sidebar flex-column" role="menu" data-accordion="false">
           <li class="nav-item">
             <a class='nav-link' href="<?php echo e(route('logout')); ?>"
                 onclick="event.preventDefault();
@@ -143,9 +134,8 @@
                 <?php echo csrf_field(); ?>
             </form>
           </li>
-   
-
         </ul>
+
       </nav>
       <!-- /.sidebar-menu -->
     </div>
