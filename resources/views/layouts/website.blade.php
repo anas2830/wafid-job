@@ -95,12 +95,15 @@
                             </form>
                             @if(Auth::guard('web')->check())
                              <a class="dropdown-item" href="{{ url('user-dashboard') }}">Dashboard</a>
+                             <a class="dropdown-item" href="{{ url('company-dashboard') }}">Company Dashboard</a>
                              <a class="dropdown-item" href="{{ url('user-profile') }}">Profile</a>
+                             <a class="dropdown-item" href="{{ url('view-resume') }}">View Resume</a>
                             @endif
                         </div>
                     </li>
                 @endguest
-          
+                <li><a href="{{ url('contact') }}">Contact</a></li>
+                <li><a href="{{ url('privacy-policy') }}">Privacy Policy</a></li>
               </ul>
             </nav>
             <a href="#" class="site-menu-toggle js-menu-toggle text-black d-inline-block d-lg-none"><span class="icon-menu h3"></span></a></div>

@@ -96,12 +96,15 @@
                             </form>
                             <?php if(Auth::guard('web')->check()): ?>
                              <a class="dropdown-item" href="<?php echo e(url('user-dashboard')); ?>">Dashboard</a>
+                             <a class="dropdown-item" href="<?php echo e(url('company-dashboard')); ?>">Company Dashboard</a>
                              <a class="dropdown-item" href="<?php echo e(url('user-profile')); ?>">Profile</a>
+                             <a class="dropdown-item" href="<?php echo e(url('view-resume')); ?>">View Resume</a>
                             <?php endif; ?>
                         </div>
                     </li>
                 <?php endif; ?>
-          
+                <li><a href="<?php echo e(url('contact')); ?>">Contact</a></li>
+                <li><a href="<?php echo e(url('privacy-policy')); ?>">Privacy Policy</a></li>
               </ul>
             </nav>
             <a href="#" class="site-menu-toggle js-menu-toggle text-black d-inline-block d-lg-none"><span class="icon-menu h3"></span></a></div>

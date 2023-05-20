@@ -29,6 +29,7 @@ class HomeController extends Controller
     }
 
     public function dashboard(){
+
         $data['user_id'] = $user_id = Auth::guard('web')->user()->id;
         $data['userInfo'] = $userInfo = DB::table('users')->find($user_id);
         $data['userDocument'] = $userDocument = DB::table('user_document')->where('user_id', $user_id)->first();
@@ -222,5 +223,12 @@ class HomeController extends Controller
 
         return back()->withInput()->with('message', 'Profile Update Successfully!');
 
+    }
+
+    //add company dashbaord
+    public function companyProfile(){
+        $data['user_id'] = $user_id = Auth::guard('web')->user()->id;
+        $data['userInfo'] = DB::table('users')->find($user_id);
+        return view('website.company-dashboard', $data);
     }
 }

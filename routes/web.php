@@ -15,6 +15,12 @@ Route::get('successfull-candidate', [IndexController::class, 'successfullCandida
 Route::get('/about', function(){
     return view('website.about');
 });
+Route::get('/contact', function(){
+    return view('website.contact');
+});
+Route::get('/privacy-policy', function(){
+    return view('website.privacy-policy');
+});
 
 Route::get('/register', 'Auth\RegisterController@create')->name('register');
 Route::post('/sign-up', 'Auth\RegisterController@signUp')->name('sign-up');
@@ -34,7 +40,12 @@ Route::group(['middleware' => ['auth']], function() {
         Route::post('/user-dashboard', 'HomeController@dashboardUpdate')->name('user-dashboard');
 
         Route::get('/user-profile', 'HomeController@userProfile')->name('user-profile');
+        Route::get('/company-dashboard', 'HomeController@companyProfile')->name('company-dashboard');
         Route::post('/profileUpdate', 'HomeController@profileUpdate')->name('profileUpdate');
+
+        Route::get('/view-resume', function(){
+            return view('website.view-resume');
+        });
     });
 });
 
