@@ -12,7 +12,7 @@
                         <p>You are requested to fulfill your requirements to complete your process. When your
                             requirement will be 100% successfull submision,we will check your documents and will make
                             sure your process </p>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>

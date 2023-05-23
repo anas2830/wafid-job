@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Wafid Service</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <script src="{{ asset('website')}}/js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="{{ asset('website')}}/fonts/icomoon/style.css">
     <link rel="stylesheet" href="{{ asset('website')}}/css/bootstrap.min.css">
@@ -15,7 +16,7 @@
     {{-- <link rel="stylesheet" href="{{ asset('website')}}/css/owl.theme.default.min.css"> --}}
     {{-- <link rel="stylesheet" href="{{ asset('website')}}/css/bootstrap-datepicker.css"> --}}
     {{-- <link rel="stylesheet" href="{{ asset('website')}}/fonts/flaticon/font/flaticon.css"> --}}
-    {{-- {{-- <link rel="stylesheet" href="{{ asset('website')}}/css/aos.css"> --}}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link rel="stylesheet" href="{{ asset('website')}}/css/style.css">
     <link rel="stylesheet" href="{{ asset('website')}}/css/sweet-alert.css">
@@ -34,20 +35,28 @@
           <div class="col-md-6 col-sm-8 col-12 d-flex align-items-center justify-content-sm-start justify-content-center mb-sm-0 mb-2">
             <div class="headerTopLeft">
               <ul class="d-flex">
-                <li><a href="mailto:{{ @$header_footer_seetings->email }}">{{ @$header_footer_seetings->email }}</a></li>
-                <li><a href="tel:{{ @$header_footer_seetings->email }}">{{ @$header_footer_seetings->phone }}</a></li>
+                <li><a href="mailto:contact-us@al-wafid.com"><i class="fa-regular fa-envelope"></i>contact-us@al-wafid.com</a></li>
+                <li><a href="tel:0564082349"><i class="fa-solid fa-phone"></i>0564082349</a></li>
               </ul>
             </div>
           </div>
           <div class="col-md-6 col-sm-4 col-12 d-flex  justify-content-sm-end justify-content-center">
-            <div class="headerTopRight">
+            <div class="lang-selector-wrap">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Bangladesh</option>
+                <option value="1">India</option>
+                <option value="2">Pakistan</option>
+                <option value="3">USA</option>
+              </select>
+            </div>
+            <!-- <div class="headerTopRight">
                 <ul>
                   <li><a href="{{ @$header_footer_seetings->facebook }}"><i class="icon-facebook"></i></a></li>
                   <li><a href="{{ @$header_footer_seetings->twitter }}"><i class="icon-twitter"></i></a></li>
                   <li><a href="{{ @$header_footer_seetings->instagram }}"><i class="icon-instagram"></i></a></li>
                   <li><a href="{{ @$header_footer_seetings->linkedin	 }}"><i class="icon-linkedin"></i></a></li>
                 </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -72,8 +81,11 @@
             <nav class="site-navigation" role="navigation">
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block mb-0">
                 <li><a href="{{ url('/')}}">Home</a></li>
-                <li><a href="{{ route('processing-candidate') }}">Processing</a></li>
-                <li><a href="{{ route('successfull-candidate') }}">Successful Candidates</a></li>
+                <li><a href="{{ route('processing-candidate') }}">Candidates</a></li>
+                <li><a href="{{ route('successfull-candidate') }}">Companies</a></li>
+                <li><a href="{{ route('successfull-candidate') }}">All Jobs</a></li>
+                <li><a href="{{ route('successfull-candidate') }}">Blog</a></li>
+                <li><a href="{{ route('successfull-candidate') }}">About Us</a></li>
                 <!-- Authentication Links -->
                 @guest
                     <li class="logRebtn"><a  href="{{ url('/login')}}">Login</a></li>
@@ -102,8 +114,8 @@
                         </div>
                     </li>
                 @endguest
-                <li><a href="{{ url('contact') }}">Contact</a></li>
-                <li><a href="{{ url('privacy-policy') }}">Privacy Policy</a></li>
+                <!-- <li><a href="{{ url('contact') }}">Contact</a></li>
+                <li><a href="{{ url('privacy-policy') }}">Privacy Policy</a></li> -->
               </ul>
             </nav>
             <a href="#" class="site-menu-toggle js-menu-toggle text-black d-inline-block d-lg-none"><span class="icon-menu h3"></span></a></div>
@@ -199,7 +211,10 @@
   <script src="{{ asset('website')}}/js/jquery.stellar.min.js"></script>
   <script src="{{ asset('website')}}/js/jquery.countdown.min.js"></script>
   <script src="{{ asset('website')}}/js/jquery.magnific-popup.min.js"></script>
-  <script src="{{ asset('website')}}/js/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
   <script src="{{ asset('website')}}/js/main.js"></script>
 
 
