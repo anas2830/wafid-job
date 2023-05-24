@@ -1593,9 +1593,9 @@ ul {
 	margin-top: 30px;
 	justify-content: center;
 }
-/* .counter-seprator {
-    margin-right: 50px;
-} */
+.counter-seprator {
+	width: 150px;
+}
 .counter-box h5,
 .counter-box h3 {
     color: #fff;
