@@ -1829,7 +1829,7 @@ ul {
 /* work-process-section */
 .work-porcess-area {
 	background: #f6f8fc;
-	padding:60px 0;
+	padding:40px 0;
 }
 
 .work-porcess-area.white {
@@ -1984,7 +1984,7 @@ font-size: 30px;
     padding: 50px 0;
     border-top: 1px dashed #26ae61;
     border-bottom: 1px dashed #26ae61;
-    margin: 40px 0;
+    margin-bottom: 40px 0;
 }
 .dream-text h2 {
 	color: #fff;

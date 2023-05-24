@@ -94,6 +94,20 @@
         </div>
     </div>
 </section>
+
+<section class="dream-section" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="dream-text">
+                    <h2>Your Dream Jobs Are Waiting</h2>
+                    <p>Over 1 million interactions, 50,000 success stories Make yours now.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="about-us-area">
     <div class="container">
         <div class="row">
@@ -122,14 +136,6 @@
                         alike navigate the complexities of international employment and achieve their goals. Our
                         commitment to quality and professionalism is unwavering, and we strive to build long-term
                         partnerships that benefit everyone involved.</p>
-                    <!-- <h6 class="section-title text-start mb-4">About Us</h6>
-                    <h5 class="mb-2">What We do<span>?</span></h5>
-                    <p class="mb-3"><?php echo e($about_us_seetings->we_do_content); ?></p>
-                    <h5 class="mb-2">For <span>Candidates</span></h5>
-                    <p class="mb-3"><?php echo e($about_us_seetings->candidates_content); ?></p>
-                    <h5 class="mb-2">For <span>Employers</span></h5>
-                    <p class="mb-3"><?php echo e($about_us_seetings->employers_content); ?></p> -->
-                    
                 </div>
             </div>
         </div>
@@ -175,18 +181,7 @@
         </div>
     </div>
 </section>
-<section class="dream-section" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 m-auto">
-                <div class="dream-text">
-                    <h2>Your Dream Jobs Are Waiting</h2>
-                    <p>Over 1 million interactions, 50,000 success stories Make yours now.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 <section class="work-porcess-area section" data-aos="fade-up" data-aos-duration="3000">
     <div class="container">
         <div class="row">
