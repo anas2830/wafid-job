@@ -1537,7 +1537,7 @@ ul {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #0f213a;
+    background: #0f213a6e;
     z-index: 1;
     opacity: 0.84;
 }
@@ -1558,8 +1558,9 @@ ul {
     z-index: 1;
 }
 .hero-text {
-    display: inline-flex;
-    flex-direction: column;
+	display: inline-flex;
+	flex-direction: column;
+	text-align: center;
 }
 .hero-text h6 {
     font-weight: 500;
@@ -1586,14 +1587,15 @@ ul {
     margin-bottom: 0;
 }
 .conter-grid {
-    display: flex;
-    gap: 20px;
-    text-align: center;
-    margin-top: 30px;
+	display: flex;
+	gap: 80px;
+	text-align: center;
+	margin-top: 30px;
+	justify-content: center;
 }
-.counter-seprator {
+/* .counter-seprator {
     margin-right: 50px;
-}
+} */
 .counter-box h5,
 .counter-box h3 {
     color: #fff;
@@ -1669,7 +1671,7 @@ ul {
 .title-bordered h2 {
     position: relative;
     display: block;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding-bottom: 20px;
     margin: 0;
     text-transform: uppercase;
@@ -1698,7 +1700,7 @@ ul {
 .title-bordered h2 {
     position: relative;
     display: block;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding-bottom: 20px;
     margin: 0;
     text-transform: uppercase;
@@ -1771,7 +1773,7 @@ ul {
 
 /* about-us */
 .about-us-area {
-	padding: 60px 0;
+	padding: 40px 0;
 }
 /* .about-us-text .section-title {
     position: relative;
@@ -1982,7 +1984,7 @@ font-size: 30px;
     padding: 50px 0;
     border-top: 1px dashed #26ae61;
     border-bottom: 1px dashed #26ae61;
-    margin:60px 0;
+    margin: 40px 0;
 }
 .dream-text h2 {
 	color: #fff;
@@ -1990,7 +1992,7 @@ font-size: 30px;
 
 /* company-working-process */
 .company-working-process {
-	padding: 60px 0;
+	padding: 40px 0;
 }
 .company-working-process-text h5 {
 	font-size: 20px;
@@ -2000,7 +2002,7 @@ font-size: 30px;
 
 /* job-type */
 .job-type {
-	padding: 60px 0;
+	padding: 40px 0;
 }
 .jobType-text h5 {
 	font-size: 25px;
@@ -2017,7 +2019,7 @@ font-size: 30px;
 
 /* new-job-list */
 .new-job-list {
-	padding: 60px 0;
+	padding: 40px 0;
 }
 .job-new-list{
     background-color: #ffffff;
@@ -2124,7 +2126,7 @@ font-size: 30px;
 
 /* Testimonial */
 .testimonial-area {
-	padding: 60px 0;
+	padding: 40px 0;
 }
 .testimonial {
     position: relative;
@@ -2244,6 +2246,238 @@ blockquote::before {
 	z-index: 2;
 }
 
+
+/* parners */
+.partners-area {
+	padding: 40px 0;
+}
+.bakix-features {
+	border-radius: 5px;
+	-webkit-box-shadow: 0 2px 40px rgba(0,0,0,.08);
+	box-shadow: 0 2px 40px rgba(0,0,0,.08);
+	padding: 45px 15px;
+	text-align: center;
+    width: 100%;
+}
+.bakix-features img {
+	border-radius: 5px;
+	margin-bottom: 15px;
+	width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+.bakix-features h4 {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0;
+	text-transform: capitalize;
+	color: #16a549;
+}
+
+/*-- Blog --*/
+.news-area {
+	padding: 40px 0;
+}
+.blog-item {
+    margin-bottom: 30px;
+    border: 1px dashed #c4c4c4;
+    border-radius: 5px;
+    padding: 15px 25px 25px 25px;
+    overflow: hidden;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+  
+  .blog-item:hover {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+    -webkit-box-shadow: 0px 0px 20px 0px #dddddd24;
+            box-shadow: 0px 0px 20px 0px #dddddd24;
+  }
+  
+  .blog-item:hover .top a img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .blog-item .top {
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .blog-item .top a {
+    display: block;
+  }
+  
+  .blog-item .top a img {
+    width: 100%;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+  
+  .blog-item span {
+    display: block;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .blog-item span:before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 1px;
+    left: 0;
+    top: 11px;
+    background-color: #5f5656;
+  }
+  
+  .blog-item h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-item h3 a {
+    color: #221668;
+  }
+  
+  .blog-item h3 a:hover {
+    color: #16a549;
+  }
+  
+  .blog-item .cmn-link {
+    text-align: left;
+    margin-left: 45px;
+  }
+  
+  .blog-item .cmn-link a {
+    color: #5f5656;
+  }
+  
+  .blog-item .cmn-link a i {
+    color: #5f5656;
+  }
+  
+  .blog-item .cmn-link a:hover {
+    margin-left: -45px;
+    color: #16a549;
+  }
+  
+  .blog-item .cmn-link a:hover .one {
+    left: -60px;
+  }
+  
+  .blog-item .cmn-link a:hover .two {
+    color: #16a549;
+  }
+
+  /* faq-area */
+  .Faq-area {
+	margin: 40px 0;
+}
+.Faq-area .accordion {
+	background: #f7f7f7;
+	padding: 5px 30px;
+}
+.Faq-area .accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .Faq-area  .accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #03b5d2;
+  }
+  
+  .Faq-area  .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  .Faq-area .accordion button:hover,
+  .Faq-area .accordion button:focus {
+    cursor: pointer;
+    color: #16a549;
+  }
+  
+  .Faq-area .accordion button:hover::after,
+  .Faq-area .accordion button:focus::after {
+    cursor: pointer;
+    color: #16a549;
+    border: 1px solid #03b5d2;
+  }
+  
+  .Faq-area .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  
+  .Faq-area .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  
+  .Faq-area .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .Faq-area .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  
+  .Faq-area .accordion button[aria-expanded='true'] {
+    color: #16a549;
+  }
+  .Faq-area .accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+  }
+  .Faq-area .accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .Faq-area .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .Faq-area .accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+  }
+  .accordion-content p > a {
+    color: #16a549;
+}
 
 /* our-service-area
 .our-service-area {

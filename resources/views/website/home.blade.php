@@ -12,7 +12,7 @@
                     <div class="hero-text-wrap">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-7 d-flex align-items-center" data-aos="fade-right">
+                                <div class="col-lg-8 m-auto d-flex align-items-center" data-aos="fade-right">
                                     <div class="hero-text ">
                                         <div class="txt1">
                                             <h6>Get Hired by Higher Class Company Inside The Gulf Countries with VISA
@@ -53,7 +53,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-5 d-flex justify-content-end" data-aos="fade-left">
+                                <!-- <div class="col-lg-5 d-flex justify-content-end" data-aos="fade-left">
                                     <div class="search-filde">
                                         <div class="search-box">
                                             <h2>Get Hired-Search..here</h2>
@@ -85,7 +85,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -576,15 +576,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="title-bordered animation fadeInUp animation-visible" data-animation="fadeInUp"
-                    data-animation-delay="0">
+                <div class="title-bordered" data-animation-delay="0">
                     <h2><span class="line line__left"></span>Testimonials<small>Our Happy Clients Say About
                             Us.</small><span class="line line__right"></span></h2>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6" data-aos="fade-right" >
+            <div class="col-md-6" data-aos="fade-right">
                 <div class="testimonial">
                     <blockquote>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut laoreet mi. Integer vitae
@@ -611,6 +610,279 @@
                         </figure>
                         <h6>Samantha White</h6>
                         <span class="bq-author-info">Manager, Compay Name</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partners-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-bordered animation fadeInUp animation-visible" data-animation="fadeInUp"
+                    data-animation-delay="0">
+                    <h2><span class="line line__left"></span>Top Hiring Companies<small>We hire skillful passionate
+                            candidates throughout the world.</small><span class="line line__right"></span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up">
+            <div class="col-lg-3 col-md-4 col-12 mb-30 d-flex">
+                <div class="bakix-features  align-self-stretch">
+                    <img src="{{ asset('uploads/slider/Alshaya.webp')}}" alt="" title="">
+                    <h4>Alshaya</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-12 mb-30 d-flex">
+                <div class="bakix-features align-self-stretch">
+                    <img src="{{ asset('uploads/slider/download.webp')}}" alt="" title="">
+                    <h4>Landmark</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-12 mb-30 d-flex">
+                <div class="bakix-features align-self-stretch">
+                    <img src="{{ asset('uploads/slider/Almarai.webp')}}" alt="" title="">
+                    <h4>Almarai</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-12 mb-30 d-flex">
+                <div class="bakix-features align-self-stretch">
+                    <img src="{{ asset('uploads/slider/download-3.webp')}}" alt="" title="">
+                    <h4>Maaden</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="news-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-bordered">
+                    <h2><span class="line line__left"></span>Al Wafid Latest News<small>To get Al-Wafid latest updates,
+                            offer and news. you may follow these articles and register on our website .</small><span
+                            class="line line__right"></span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up">
+            <div class="col-sm-6 col-lg-4">
+                <div class="blog-item">
+                    <div class="top">
+                        <a href="#">
+                            <img src="{{ asset('uploads/bg/how-to-use-al-wafid.webp')}}" alt="" title="">
+                        </a>
+                    </div>
+                    <span>Job skills. 12-09-2020</span>
+                    <h3>
+                        <a href="#">How to use Al-Wafid website?</a>
+                    </h3>
+                    <div class="cmn-link">
+                        <a href="#">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right-long two"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="blog-item">
+                    <div class="top">
+                        <a href="#">
+                            <img src="{{ asset('uploads/bg/Services-1.webp')}}" alt="" title="">
+                        </a>
+                    </div>
+                    <span>Career advice. 11-09-2020</span>
+                    <h3>
+                        <a href="#">Al-Wafid Best Services</a>
+                    </h3>
+                    <div class="cmn-link">
+                        <a href="#">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right-long two"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
+                <div class="blog-item">
+                    <div class="top">
+                        <a href="#">
+                            <img src="{{ asset('uploads/bg/WhatsApp-Image-2023-05-02-at-12.17.06-AM.webp')}}" alt=""
+                                title="">
+                        </a>
+                    </div>
+                    <span>Future plan. 10-09-2020</span>
+                    <h3>
+                        <a href="#">Al Wafid Mission</a>
+                    </h3>
+                    <div class="cmn-link">
+                        <a href="#">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right-long two"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Faq-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-bordered animation fadeInUp animation-visible" data-animation="fadeInUp"
+                    data-animation-delay="0">
+                    <h2><span class="line line__left"></span>FAQ About Al-Wafid<span class="line line__right"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-md-6" data-aos="fade-right">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false">
+                            <span class="accordion-title">Will I get Saudi Arabia Visa with a job through al-wafid
+                                agency?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Al-Wafid tell you yes, you will get Saudi Arabia Visa with a best job, If any company 
+                                will select you by taking your virtual interview  according to their requirements.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title">Is Al-Wafid job provider and Visa selling company? If not,
+                                What is the main purposes of al-wafid?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                No, Al-Wafid  only IT services provider agency approved by
+                                <a href="https://en.wikipedia.org/wiki/Saudi_Arabia" target="_blank"
+                                    rel="noopener">(KSA)</a>
+                                Kingdom of Saudi Arabia Government. Al-Wafid collects actual job vacancies inside from
+                                Saudi Arabia  higher class companies through our website and justify about the job offer
+                                companies then publish job offer on our
+                                <a href="https://al-wafid.com/" target="_blank" rel="noopener">website</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-3" aria-expanded="false">
+                            <span class="accordion-title">What are the best services of Al-Wafid ?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>What are the best services of Al-Wafid ?
+                                <a href="https://al-wafid.com/all-jobs/" target="_blank" rel="noopener">dream job</a>
+                                from their home through our website and Companies can choose different professional
+                                skillful candidates from the world on our website.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-4" aria-expanded="false">
+                            <span class="accordion-title">Who will be benefited from Al-Wafid website?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p><a href="https://al-wafid.com/candidates/" target="_blank" rel="noopener">Candidates</a>
+                                and Companies both will be benefited from <a href="https://al-wafid.com/"
+                                    target="_blank" rel="noopener">Al-Wafid</a> website. <a
+                                    href="https://al-wafid.com/candidates/" target="_blank"
+                                    rel="noopener">Candidates</a> will get proper best job according to their
+                                qualifications and experiences with less expenses also companies will find thousands of
+                                different discipline professional candidates throughout the world.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-5" aria-expanded="false">
+                            <span class="accordion-title">How Al Wafid provides less expenses job offer?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p><a href="https://al-wafid.com/" target="_blank" rel="noopener">Al Wafid</a> connects
+                                candidates directly with higher-class Saudi Arabia best companies and company will
+                                provide all necessary processing to bring skillful experiences candidates in workplace.
+                                That’s why between <a href="https://al-wafid.com/candidates/" target="_blank"
+                                    rel="noopener">candidates</a> and companies there are no Broker to increase
+                                processing fee.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false">
+                            <span class="accordion-title">Is Al Wafid registration free for applying job and posting
+                                job?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>No, <a href="https://al-wafid.com/" target="_blank" rel="noopener">Al-Wafid</a> takes a
+                                little amount as a <a href="https://al-wafid.com/candidates/" target="_blank"
+                                    rel="noopener">candidate</a> best job apply fee package.<br>
+                                It is one time package for applying unlimited best jobs in life time until candidate get
+                                best job. Job posting is free now but sometimes it will depends on our <a
+                                    href="https://al-wafid.com/privacy-policy-2/" target="_blank"
+                                    rel="noopener">policy.</a></p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title">How will I buy candidate job applying package with
+                                al-wafid?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>At first <a href="https://al-wafid.com/signup/" target="_blank"
+                                    rel="noopener">register</a> on Al-Wafid website by giving valid information and
+                                update your profile<br>
+                                from candidate dashboard then buy candidate job apply package with VISA/Master Card or
+                                others online supported payment method. <a href="https://al-wafid.com/signup/"
+                                    target="_blank" rel="noopener">Apply</a> your dream job until you get it.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-3" aria-expanded="false">
+                            <span class="accordion-title">Is Al-Wafid refund candidate package fee?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>No,It is not refundable.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-4" aria-expanded="false">
+                            <span class="accordion-title">If any company break their agreement with candidate in future,
+                                Al-Wafid will take any action against company or Candidate?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Al-Wafid&nbsp; connects candidates to the higher class companies as a agency to get
+                                candidates dream job. Al Wafid is not responsible for anything in future.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-5" aria-expanded="false">
+                            <span class="accordion-title">Will I get my dream job inside Saudi Arabia through Al Wafid
+                                website?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, You can get your dream job through Al Wafid website because Al Wafid justify about
+                                companies and job vacancies then publish it.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -756,4 +1028,22 @@
         </div>
     </div>
 </section> -->
+
+<script>
+const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+
+    for (i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+    }
+
+    if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+    }
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+</script>
 @endsection
